@@ -15,7 +15,7 @@ const client = new Discord.Client();
   
     if (newUsers[guild.id].size > 10) {
       const userlist = newUsers[guild.id].map(u => u.toString()).join(" ");
-      guild.channels.find(channel => channel.name === "「♥〢𝑊𝑒𝑙𝑐𝑜𝑚𝑒").send("Be Servere D V N   N I T R O Khosh Omadi\n" + userlist).then(message => message.delete(15000)).catch(err => err);
+      guild.channels.find(channel => channel.name === "「♥〢𝑊𝑒𝑙𝑐𝑜𝑚𝑒").send("Be Servere D V N   N I T R O Khosh Omadi\n" + userlist)
       newUsers[guild.id].clear();
     }
   });
