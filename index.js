@@ -19,11 +19,6 @@ const client = new Discord.Client();
       newUsers[guild.id].clear();
     }
   });
-  
-  client.on("guildMemberRemove", (member) => {
-    const guild = member.guild;
-    if (newUsers[guild.id].has(member.id)) newUsers.delete(member.id);
-  });
 
 
 
